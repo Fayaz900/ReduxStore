@@ -45,7 +45,13 @@ function requestLoan(){
         amount:1000, purpose:"Buy ps5"
     }}
 
+
 }
+
+
+// calling the functions
+store.dispatch(deposit(500))
+store.dispatch(withdraw(100))
 
 
 
