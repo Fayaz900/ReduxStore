@@ -1,8 +1,9 @@
-import CreateCustomer from "./Components/CreateCustomer";
+import CreateCustomer from "./Components/features/customer/CreateCustomer";
 import './App.css'
-import Customer from "./Components/Customer";
-import AccountOperations from "./Components/AccountOperations";
-import BalanceDisplay from "./Components/BalanceDisplay";
+
+import AccountOperations from "./Components/features/account/AccountOperations";
+import BalanceDisplay from "./Components/features/account/BalanceDisplay";
+import Customer from "./components/features/customer/Customer";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div>
       <h1>🏦 Welcome to Sujith's Bank ⚛️</h1>
       <CreateCustomer />
-      <Customer />
+      <Customer/>
       <AccountOperations />
       <BalanceDisplay />
     </div>
