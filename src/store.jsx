@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
 // store.dispatch(deposit(500))
 // store.dispatch(withdraw(100))
 
-store.dispatch(createCustomer("Fayaz","KBF2252"))
+// store.dispatch(createCustomer("Fayaz","KBF2252"))
 // store.dispatch(updateName("Fayaz E A"))
 
 

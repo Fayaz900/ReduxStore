@@ -14,7 +14,7 @@ export function reducer(state = initialState, action){
             if(state.loan>0) return state;
             return{...state, loan: action.payload.amount,
             loanPurpose: action.payload.purpose,
-            balance: state.balance+ action.payload.amount} 
+            balance: state.balance + action.payload.amount} 
         case 'account/payloan':
             return{
                 ...state,
@@ -35,10 +35,10 @@ export function withdraw(amount){
     return{type:"account/withdraw", payload:amount}
 }
 
-export function requestLoan(){
+export function requestLoan(loanAmount,loanPurpose){
 
     return{type:"account/requestLoan", payload:{
-        amount:1000, purpose:"Buy ps5"
+        amount:loanAmount, purpose:loanPurpose
     }}
 
 
